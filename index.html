@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>RePose — Yoga Assistant (Demo)</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- TensorFlow.js + Pose Detection + MediaPipe backend (CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/pose-detection@latest"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/pose@latest"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>RePose — Demo</h1>
+    <p class="hint">Buka halaman ini di Chrome (desktop atau HP). Izinkan akses kamera.</p>
+
+    <div class="video-wrap">
+      <video id="video" autoplay playsinline muted></video>
+      <canvas id="output"></canvas>
+    </div>
+
+    <div class="controls">
+      <button id="startBtn">Start Yoga (Init)</button>
+      <button id="speakTest">Test Voice</button>
+    </div>
+
+    <div id="log" aria-live="polite"></div>
+  </div>
+
+  <!-- our script -->
+  <script src="script.js"></script>
+</body>
+</html>

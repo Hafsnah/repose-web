@@ -1,0 +1,22 @@
+* { box-sizing: border-box; }
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f7f9fc;
+  color: #111;
+  margin: 0;
+  padding: 16px;
+  text-align: center;
+}
+.container { max-width: 760px; margin: 0 auto; }
+.video-wrap { position: relative; display:inline-block; }
+video, canvas {
+  width: 86vw;
+  max-width: 640px;
+  height: auto;
+  border-radius: 8px;
+  background: #000;
+}
+.controls { margin-top: 12px; }
+button { padding: 8px 14px; margin: 6px; border-radius: 6px; cursor: pointer; }
+#log { margin-top: 12px; font-size: 14px; color: #333; }
+.hint { font-size: 13px; color: #666; }
